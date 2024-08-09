@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+  
+<suite name="Web App Testing" parallel="true" thread-count="3">
+	<listeners> 
+  		<listener class-name = "com.site.web.utils.TestListenerClass"></listener>
+  	</listeners>
+	<test name="Sample Web Testing">
+		<classes>
+			<class name="com.site.web.tests.HomePageTests"></class>
+		</classes>
+	</test>
+</suite>
+
+
+<!-- Add the Run Time Variable in the TestNG Configuration as below 
+
+		-DBROWSDER=chrome (or)
+		-DBROWSDER=firefox (or)
+		-DBROWSDER=edge
+
+-->
